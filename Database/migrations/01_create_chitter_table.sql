@@ -1,4 +1,4 @@
 CREATE TABLE chitter (
   id SERIAL PRIMARY KEY,
-  post VARCHAR(60)
+  peep VARCHAR(60)
 );

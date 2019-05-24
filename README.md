@@ -13,6 +13,26 @@ It should have the following functionality -
 - Run rackup
 - Visit localhost:[port number]
 
+### To set up the database
+
+Connect to `psql` and create the `chitter_manager` database:
+
+```
+CREATE DATABASE chitter_manager;
+```
+
+To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `database/migrations` folder in the given order.
+
+### To set up the test database
+
+Connect to `psql` and create the `chitter_manager_test` database:
+
+```
+CREATE DATABASE chitter_manager_test;
+```
+
+To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
+
 ## User Stories
 
 ### STRAIGHT UP

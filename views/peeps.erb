@@ -4,11 +4,20 @@
 <body>
 <h1> Welcome to Chitter! </h1>
 
-<form action='/' method='post'>
+<form action='/add_peep' method='post'>
   <input type='text' name='peep' placeholder='Enter your peep here....'/>
   <input type='submit' value='Add peep'/>
   </form>
-  
+
+  <ul>
+<% @peeps.each do |peep| %>
+<li>
+  <a> <%= peep.peep %>
+    </a>
+  </li>
+<% end %>
+</ul>
+
   </body>
 
 </html>
