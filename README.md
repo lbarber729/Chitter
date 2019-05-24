@@ -1,6 +1,6 @@
 # Chitter
 The aim of this project is to write a small twitter clone that will allow users  to post messages to a public stream.
-Functionality -
+It should have the following functionality -
 - You don't have to be logged in to see the peeps.
 - Makers sign up to chitter with their email, password, name and a username (e.g. samm@makersacademy.com, password123, Sam Morgan, sjmog).
 - The username and email are unique.
@@ -15,7 +15,7 @@ Functionality -
 
 ## User Stories
 
-###STRAIGHT UP
+### STRAIGHT UP
 ```
 As a Maker
 So that I can let people know what I am doing  
@@ -55,7 +55,7 @@ So that I can stay constantly tapped in to the shouty box of Chitter
 I want to receive an email if I am tagged in a Peep
 ```
 
-### Status
+## Status
 - Where did I get up to
 - Are tests passing
 - Test coverage
