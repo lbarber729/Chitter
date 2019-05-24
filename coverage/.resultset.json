@@ -1,7 +1,17 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/lucybarber/Documents/Makers/weekend_challenges/Chitter/spec/features/homepage_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ]
     },
-    "timestamp": 1558695628
+    "timestamp": 1558697581
   }
 }

@@ -21,6 +21,11 @@ As a Maker
 So that I can let people know what I am doing  
 I want to post a message (peep) to chitter
 ```
+Object | Message
+-|-
+Message (peep) | post to chitter
+
+![Alt Text](https://i.postimg.cc/yYg1ZTgH/Chitter-User-Story-1.jpg)
 ```
 As a maker
 So that I can see what others are saying  
