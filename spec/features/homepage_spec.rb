@@ -1,9 +1,15 @@
-
+require_relative './web_helpers'
 feature 'Homepage' do
   scenario 'It welcomes the user' do
     visit('/')
-    fill_in('peep', with: 'This is my fist peep')
-    click_button('Add peep')
-    expect(page).to have_content('This is my fist peep')
+    expect(page).to have_content('Welcome to Chitter!')
   end
+
+  scenario 'displays all peeps' do
+    add_peep_1
+    add_peep_2
+    expect(page).to have_content('This is my first peep')
+    expect(page).to have_content('This is my second peep')
+  end
+
 end

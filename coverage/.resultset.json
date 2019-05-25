@@ -2,14 +2,33 @@
   "RSpec": {
     "coverage": {
       "/Users/lucybarber/Documents/Makers/weekend_challenges/Chitter/spec/features/homepage_spec.rb": [
-        null,
-        1,
         1,
         1,
         1,
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/lucybarber/Documents/Makers/weekend_challenges/Chitter/spec/features/web_helpers.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/lucybarber/Documents/Makers/weekend_challenges/Chitter/spec/peep_spec.rb": [
@@ -24,9 +43,18 @@
         null,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1558720697
+    "timestamp": 1558786815
   }
 }
