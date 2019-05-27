@@ -11,4 +11,13 @@ describe 'Users' do
     end
   end
 
-end 
+  describe '.find' do
+    it 'can find a user' do
+      user = User.create(name: 'Lucy Barber', username: 'lbarber729', email: 'lucy@email.com', password: 'Password123')
+      found = User.find(email: 'lucy@email.com', password: 'Password123')
+
+      expect(found).to eq ({ 'name' => 'Lucy Barber', 'username' => 'lbarber729' })
+    end
+  end
+
+end

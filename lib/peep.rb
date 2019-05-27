@@ -23,6 +23,7 @@ attr_reader :id, :peep, :posted_at
   end
 
   def self.post(peep:, posted_at:)
+    @posted_at = Time.now
     if ENV['ENVIRONMENT'] == 'test'
       con = PG.connect(dbname: 'chitter_manager_test')
     else

@@ -24,4 +24,15 @@ attr_reader :id, :name, :username, :email
 
   end
 
+  def self.find(email:, password:)
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'chitter_manager_test')
+    else
+      connection = PG.connect(dbname: 'chitter_manager')
+    end
+    find = connection.exec("SELECT name, username FROM users WHERE email = '#{email}' AND password = '#{password}';")
+    find.first
+  end
+
+
 end
