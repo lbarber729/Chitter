@@ -43,7 +43,8 @@ I want to post a message (peep) to chitter
 ```
 Object | Message
 -|-
-Message (peep) | post to chitter
+User |
+Message (peep) | Post to chitter
 
 ![Alt Text](https://i.postimg.cc/yYg1ZTgH/Chitter-User-Story-1.jpg)
 ```
@@ -51,16 +52,28 @@ As a maker
 So that I can see what others are saying  
 I want to see all peeps in reverse chronological order
 ```
+Object | Message
+-|-
+User |
+Message (peep) | Display in reverse chronological order
 ```
 As a Maker
 So that I can better appreciate the context of a peep
 I want to see the time at which it was made
 ```
+Object | Message
+-|-
+User |
+Message (peep) | Display time it was posted
 ```
 As a Maker
 So that I can post messages on Chitter as me
 I want to sign up for Chitter
 ```
+Object | Message
+-|-
+User | 
+Chitter | Sign up
 
 ### HARDER
 ```
