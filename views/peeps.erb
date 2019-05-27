@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <html>
 
-<body>
-<h1> Welcome to Chitter! </h1>
+<head>
+  <style>
+    head {
+      backgroud-color: darkblue;
+    }
+    body {
+      background-color: lightblue;
+    }
+
+    h1 {
+      color: navy;
+      margin-left: 20px;
+    } 
+    </style>
+
+<h1> Welcome to Chitter!
+  <form action='/sign_up' method='get'>
+    <input type='submit' value='Sign up'/>
+    </form>
+  </h1>
+
+  </head>
+
+  <body>
 
 <form action='/add_peep' method='post'>
   <input type='text' name='peep' placeholder='Enter your peep here....'/>

@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './lib/peep.rb'
+require './lib/users.rb'
 
 class Chitter < Sinatra::Base
   get '/' do
@@ -13,4 +14,18 @@ class Chitter < Sinatra::Base
     Peep.post(peep: @peep, posted_at: @time)
     redirect '/'
   end
+
+  get '/sign_up' do
+    erb :sign_up
+  end
+
+  post '/sign_up' do
+    @name = params[:name]
+    @username = params[:username]
+    @email = params[:email]
+    @password = params[:password]
+    User.create(name: @name, username: @username, email: @email, password: @password)
+    redirect '/'
+  end
+
 end
