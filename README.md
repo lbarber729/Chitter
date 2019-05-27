@@ -5,7 +5,6 @@ It should have the following functionality -
 - Makers sign up to chitter with their email, password, name and a username (e.g. samm@makersacademy.com, password123, Sam Morgan, sjmog).
 - The username and email are unique.
 - Peeps (posts to chitter) have the name of the maker and their user handle.
-- Your README should indicate the technologies used, and give instructions on how to install and run the tests.
 
 ### How to use
 - Clone this repo to your machine
@@ -81,11 +80,19 @@ As a``` Maker
 So that only I can post messages on Chitter as me
 I want to log in to Chitter
 ```
+Object | Message
+-|-
+User | 
+Chitter | Log in
 ```
 As a Maker
 So that I can avoid others posting messages on Chitter as me
 I want to log out of Chitter
 ```
+Object | Message
+-|-
+User | 
+Chitter | Log out
 
 ### ADVANCED
 ```As a Maker
@@ -94,6 +101,6 @@ I want to receive an email if I am tagged in a Peep
 ```
 
 ## Status
-- Where did I get up to
-- Are tests passing
-- Test coverage
+- I have managed to complete all the straight up user stories, my next step would be to move onto the harder user stories and to display the users username next to the peeps 
+- All test are passing
+- 100% Test coverage
