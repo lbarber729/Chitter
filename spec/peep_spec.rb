@@ -3,7 +3,7 @@ describe 'peep' do
 
   describe '.post' do
     it 'can post a peep' do
-      Peep.post('This is my first peep')
+      Peep.post(peep: 'This is my first peep', posted_at: Time.now)
       peep = Peep.all
       expect(peep.first.peep).to eq('This is my first peep')
     end
@@ -11,11 +11,13 @@ describe 'peep' do
 
   describe '.all' do
     it 'shows all peeps in reverse chronological order' do
-      peep = Peep.post('This is my first peep')
-      peep_newest = Peep.post('This is my second peep')
+
+      first_peep = Peep.post(peep: 'This is my first peep', posted_at: Time.new - 60)
+      second_peep = Peep.post(peep:'This is my second peep', posted_at: Time.now)
       peep = Peep.all
       expect(peep.first.peep).to eq('This is my second peep')
     end
+
   end
 
 end

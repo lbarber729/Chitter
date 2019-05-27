@@ -12,7 +12,7 @@
   <ul>
 <% @peeps.each do |peep| %>
 <li>
-  <%= peep.peep %> 
+  <%= peep.peep %> (<%= peep.posted_at %>)
   </li>
 <% end %>
 </ul>

@@ -12,4 +12,10 @@ feature 'Homepage' do
     expect(page).to have_content('This is my second peep')
   end
 
+  scenario 'displays the time a peep was posted' do
+    peep = Peep.post(peep: 'This is  my first peep', posted_at: Time.now)
+    visit('/')
+    expect(page).to have_content("#{peep.posted_at}")
+  end
+
 end

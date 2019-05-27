@@ -16,6 +16,12 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/lucybarber/Documents/Makers/weekend_challenges/Chitter/spec/features/web_helpers.rb": [
@@ -45,16 +51,18 @@
         null,
         1,
         1,
+        null,
         1,
         1,
         1,
         1,
+        null,
         null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1558786815
+    "timestamp": 1558968352
   }
 }
