@@ -12,7 +12,8 @@ It should have the following functionality -
 - Run rackup
 - Visit localhost:[port number]
 
-![Alt Text](https://media.giphy.com/media/Vd24V4uHSnAqJ8Vhnk/giphy.gif)
+![Alt Text](https://media.giphy.com/media/jsTBfdXhHKrnZOnNcY/giphy.gif)
+![Alt Text](https://media.giphy.com/media/U8HTlm5dyIKZ38IIwY/giphy.gif)
 
 ### To set up the database
 
