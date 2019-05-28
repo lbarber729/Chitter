@@ -12,6 +12,8 @@ It should have the following functionality -
 - Run rackup
 - Visit localhost:[port number]
 
+![Alt Text](https://media.giphy.com/media/Vd24V4uHSnAqJ8Vhnk/giphy.gif)
+
 ### To set up the database
 
 Connect to `psql` and create the `chitter_manager` database:
