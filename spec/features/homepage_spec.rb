@@ -5,14 +5,10 @@ feature 'Homepage' do
     expect(page).to have_content('Welcome to Chitter!')
   end
 
-  scenario 'allows the user to add a peep' do
-    visit('/')
-    expect(page).to have_button('Add peep')
-  end
-
   scenario 'displays all peeps' do
-    add_peep_1
-    add_peep_2
+    Peep.post(peep: 'This is  my first peep', posted_at: Time.now)
+    Peep.post(peep: 'This is  my second peep', posted_at: Time.now)
+    visit('/')
     expect(page).to have_content('This is my first peep')
     expect(page).to have_content('This is my second peep')
   end
@@ -27,5 +23,4 @@ feature 'Homepage' do
     visit('/')
     expect(page).to have_button('Sign up')
   end
-
 end

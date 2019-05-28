@@ -1,9 +1,9 @@
 require 'pg'
 class User
-attr_reader :id, :name, :username, :email
+  attr_reader :id, :name, :username, :email
 
   def initialize(id:, name:, username:, email:)
-    @id  = id
+    @id = id
     @name = name
     @username = username
     @email = email
@@ -19,9 +19,12 @@ attr_reader :id, :name, :username, :email
     result = con.exec("INSERT INTO users (name, username, email, password)
     Values ('#{name}', '#{username}','#{email}', '#{password}')
     RETURNING id, name, username, email, password;")
-    User.new(id: result[0]['id'], name: result[0]['name'], username: result[0]['username'],
-      email: result[0]['email'])
-
+    User.new(
+      id: result[0]['id'],
+      name: result[0]['name'],
+      username: result[0]['username'],
+      email: result[0]['email']
+    )
   end
 
   def self.find(email:, password:)
@@ -33,6 +36,4 @@ attr_reader :id, :name, :username, :email
     find = connection.exec("SELECT name, username FROM users WHERE email = '#{email}' AND password = '#{password}';")
     find.first
   end
-
-
 end

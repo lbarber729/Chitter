@@ -71,7 +71,7 @@ I want to sign up for Chitter
 ```
 Object | Message
 -|-
-User | 
+User |
 Chitter | Sign up
 
 ### HARDER
@@ -82,7 +82,7 @@ I want to log in to Chitter
 ```
 Object | Message
 -|-
-User | 
+User |
 Chitter | Log in
 ```
 As a Maker
@@ -91,7 +91,7 @@ I want to log out of Chitter
 ```
 Object | Message
 -|-
-User | 
+User |
 Chitter | Log out
 
 ### ADVANCED
@@ -101,6 +101,6 @@ I want to receive an email if I am tagged in a Peep
 ```
 
 ## Status
-- I have managed to complete all the straight up user stories, my next step would be to move onto the harder user stories and to display the users username next to the peeps 
+- I have managed to complete all the  user stories apart from the advanced. My next step would be to display the users username next to the peeps and encrypt the users password when signing up.
 - All test are passing
 - 100% Test coverage

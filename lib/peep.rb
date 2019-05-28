@@ -1,7 +1,7 @@
 require 'pg'
 
 class Peep
-attr_reader :id, :peep, :posted_at
+  attr_reader :id, :peep, :posted_at
 
   def initialize(id:, peep:, posted_at:)
     @id = id

@@ -2,12 +2,22 @@
 <html>
 
 <head>
+  <style>
+    h1 {
+  text-align: center;
+}
+body {
+  background-color: lightblue;
+}
+
+    </style>
 
 <h1>
   <% if !@user %> Welcome to Chitter!
   <form action='/sign_up' method='get'>
     <input type='submit' value='Sign up'/>
     </form>
+
     <form action='/log_in' method='get'>
       <input type='submit' value='Log in'/>
       </form>
@@ -21,7 +31,7 @@
       </form>
     <% end %>
     </h1>
-
+<hr>
 
   </head>
 <body>
